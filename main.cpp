@@ -1,3 +1,7 @@
+//
+// An example from https://www.youtube.com/watch?v=iKtCXUHsV70
+//
+
 #include <QCoreApplication>
 #include "MultithreadedTCPServer.h"
 

@@ -14,6 +14,7 @@ public:
     void startServer();
 
 protected:
+    // This virtual function is called by QTcpServer when a new connection is available
     void incomingConnection(qintptr socketDescriptor) override;
 
 public slots:

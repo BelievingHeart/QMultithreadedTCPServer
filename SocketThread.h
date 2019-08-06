@@ -10,7 +10,8 @@
 
 class SocketThread : public QThread{
     Q_OBJECT
-    qintptr _socketDescriptor;
+
+    qintptr _socketDescriptor; // Underlying socket id from the operating system
     QTcpSocket* _socket = nullptr;
 
 
@@ -19,7 +20,7 @@ public:
     void run() final;
 
 public slots:
-    void readyRead();
+    void socketReadyRead();
     void socketDisconnected();
 
 };
